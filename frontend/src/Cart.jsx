@@ -48,9 +48,6 @@ const removeFromCart = async (id) => {
     return <div className="text-center my-5">Loading your cart...</div>;
   }
 
-  if (data.length === 0) {
-    return <div className="text-center my-5">Your cart is empty!</div>;
-  }
 
   return (
     <div className="container my-4 ">
@@ -58,11 +55,7 @@ const removeFromCart = async (id) => {
         <div className="col-8">
       <h2 className="text-center  mb-4">Products in Cart</h2>
 
-      {msg && (
-        <div className="alert alert-info text-center" role="alert">
-          {msg}
-        </div>
-      )}
+    
 
       <div className="row">
         {data.map(product => (

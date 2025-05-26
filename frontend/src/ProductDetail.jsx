@@ -74,7 +74,7 @@ const addToCart = async (item) => {
             <h4 className="text-success mb-3">${product.price}</h4>
             <p className="">{product.description}</p>
             <p>
-              <span className="badge bg-warning text-dark">⭐ {product.rating.rate}</span>
+              <span className="badge bg-success text-dark">⭐ {product.rating.rate}</span>
               <span className="ms-2 text-muted">({product.rating.count} reviews)</span>
             </p>
             <button onClick={() => addToCart(product)} className="btn btn-primary mt-2">
